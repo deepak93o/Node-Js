@@ -2,16 +2,17 @@ const fs = require("fs");
 
 ///////////Write a File
 
-// fs.writeFileSync('./text.txt', 'Hey There !!');
+// fs.writeFileSync('./test.txt', 'Hey There !!');
 
-// fs.writeFile('./text.txt', 'Hey There!!', (err) => {})
+//  fs.writeFile('./test.txt', 'Hey There!!', (err) => {})
 
-// const result = fs.readFileSync('./text.txt', 'utf-8');
+    //////////Read a file
+
+// const result = fs.readFileSync('./test.txt', 'utf-8');
 // console.log(result);
 
-//////////Read a file
 
-// fs.readFile("./text.txt","utf-8",(err,result) => {
+// fs.readFile("./contact.txt","utf-8",(err,result) => {
 //     if(err){
 //         console.log("Error:" + err);        
 //     }
@@ -22,4 +23,15 @@ const fs = require("fs");
 
 ///////Append file
 
-// fs.appendFileSync("./text.txt", new Date().getDate().toLocaleString())
+// fs.appendFileSync("./test.txt", "Date = " + new Date().getDate().toLocaleString())
+
+// fs.cpSync("./contact.txt", "./copy.html")
+
+// fs.unlinkSync("./copy.html");
+
+// console.log(fs.statSync('./contact.txt'))
+
+// fs.mkdirSync("my-docs/a/b", { recursive: true});
+// fs.rmdirSync("my-docs/a/b")
+// fs.rmdirSync("my-docs/a")
+// fs.rmdirSync("my-docs")
