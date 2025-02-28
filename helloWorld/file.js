@@ -23,4 +23,3 @@ const fs = require("fs");
 ///////Append file
 
 // fs.appendFileSync("./text.txt", new Date().getDate().toLocaleString())
-
