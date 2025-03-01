@@ -16,11 +16,15 @@ const myServer = http.createServer( (req, res) => {
             //     res.end(`Hi ${username}!`);
             // break
             case '/signup':
-                res.end(`Email: xyx@gmail.com\nUsername: deepak93o`);
+                if(req.method === 'GET'){
+                    res.end("SignUp page");
+                } else if(req.method === 'POST'){
+                    res.end("Form submitted");
+                }
             break
             default: res.end("404 Not Found");
         }
     });
 });
 
-myServer.listen(5001, () => console.log("Server Started!"));
+myServer.listen(9090, () => console.log("Server Started!"));
