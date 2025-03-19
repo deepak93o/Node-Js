@@ -1,16 +1,15 @@
 const express = require('express');
 const users = require('./MOCK_DATA.json')
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const fs = require("fs");
-
 const app = express();
 const PORT = 8000;
-// // Connection
 
-// mongoose
-//     .connect('mongodb+srv://deepak93o:Deep@k455@cluster69.wicir.mongodb.net/?retryWrites=true&w=majority&appName=Cluster69')
-//     .then(() => console.log("MongoDB Connected"))
-//     .catch(err => console.log("Error: ", err));
+// Connection
+
+mongoose.connect('mongodb+srv://deepak93o:45516111@cluster69.wicir.mongodb.net/newDb?retryWrites=true&w=majority&appName=Cluster69')
+.then(() => console.log("✅ MongoDB Connected Successfully to Atlas!"))
+.catch(err => console.error("❌ MongoDB Connection Error:", err));
 
 //Schema
 
