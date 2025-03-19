@@ -36,3 +36,26 @@
  1741608830331: ::1: GET: /api/users/111
  1741613288495: ::1: GET: /
  1741613291308: ::1: GET: /users
+ 1742396625561: ::1: POST: /api/users
+ 1742396660046: ::1: POST: /api/users
+ 1742396796306: ::1: POST: /api/users
+ 1742397124456: ::1: GET: /
+ 1742397169247: ::1: POST: /api/users
+ 1742397186663: ::1: GET: /users
+ 1742397276866: ::1: GET: /
+ 1742397282481: ::1: POST: /api/users
+ 1742397307706: ::1: POST: /api/users
+ 1742397358413: ::1: POST: /api/users
+ 1742397373606: ::1: GET: /users
+ 1742397573931: ::1: GET: /api/users
+ 1742397759805: ::1: GET: /api/users/67dadfae2fd9a3a68158a792
+ 1742398183500: ::1: PATCH: /api/users/67dadef16605edfea7c4a60e
+ 1742398189814: ::1: GET: /api/users
+ 1742398208782: ::1: DELETE: /api/users/67dadef16605edfea7c4a60e
+ 1742398212755: ::1: GET: /api/users
+ 1742398233317: ::1: DELETE: /api/users/67dadfae2fd9a3a68158a792
+ 1742398237321: ::1: GET: /api/users
+ 1742398251036: ::1: DELETE: /api/users/67dadd7c055d8942b308fd5f
+ 1742398254720: ::1: GET: /api/users
+ 1742398294335: ::1: POST: /api/users
+ 1742398298962: ::1: GET: /api/users
