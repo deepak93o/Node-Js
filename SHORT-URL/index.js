@@ -14,8 +14,8 @@ connectToMongoDB(
   .catch((err) => console.error("❌ MongoDB Connection Error:", err));
 
 //EJS
-// app.set("view engine", "ejs");
-// app.set("views", path.resolve("./views"));
+app.set("view engine", "ejs");
+app.set("views", path.resolve("./views"));
 
 // app.get("/test", async (req, res) => {
 //   const allUrls = await URL.find({});
@@ -48,7 +48,12 @@ connectToMongoDB(
 // });
 
 app.use(express.json());
+
+app.use(express.urlencoded({ extended: false}));
+
 app.use("/url", urlRoute);
+
+app.use("/", staticRoute);
 
 app.get("/:shortId", async (req, res) => {
   const shortId = req.params.shortId;
